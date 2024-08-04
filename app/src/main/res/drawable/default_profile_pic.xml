@@ -1,0 +1,10 @@
+<!-- res/drawable/ic_placeholder_profile_pic.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+    <path
+        android:fillColor="#808080"
+        android:pathData="M12,2c-2.76,0 -5,2.24 -5,5s2.24,5 5,5s5,-2.24 5,-5s-2.24,-5 -5,-5zM12,4c1.66,0 3,1.34 3,3s-1.34,3 -3,3s-3,-1.34 -3,-3s1.34,-3 3,-3zM12,16c-2.33,0 -7,1.17 -7,3.5V21h14v-1.5c0,-2.33 -4.67,-3.5 -7,-3.5z"/>
+</vector>

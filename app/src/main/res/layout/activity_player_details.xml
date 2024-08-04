@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/back"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button_description" />
+
+    <!-- Player Photo -->
+    <ImageView
+        android:id="@+id/imageViewPlayer"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/john"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/backButton" />
+
+    <!-- Player Name -->
+    <TextView
+        android:id="@+id/textViewPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/imageViewPlayer"
+        android:layout_alignTop="@+id/imageViewPlayer"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Favorite Sports -->
+    <TextView
+        android:id="@+id/favoriteSportsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite Sports"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageViewPlayer"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/favoriteSports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basketball, Tennis, Soccer"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/favoriteSportsLabel"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bio -->
+    <TextView
+        android:id="@+id/bioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@id/favoriteSports"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I love playing sports and enjoy teaching them too. \nLet's play together!"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/bioLabel"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Pictures -->
+    <TextView
+        android:id="@+id/picturesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pictures"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@id/bio"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp" />
+
+</RelativeLayout>

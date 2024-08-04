@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Name,"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/learnSportButton"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/learn_sport_icon"
+                android:background="@drawable/roundcorner" />
+
+            <TextView
+                android:id="@+id/textViewLearn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Learn a New\n       Sport"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                android:padding="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/playOneOnOneButton"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/one_on_one_icon"
+                android:background="@drawable/roundcorner" />
+
+            <TextView
+                android:id="@+id/textViewOneOnOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Play 1:1"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                android:padding="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/playTournamentButton"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tournament_icon"
+                android:background="@drawable/roundcorner" />
+
+            <TextView
+                android:id="@+id/textViewTournament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Tournament"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                android:padding="8dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

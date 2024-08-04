@@ -1,0 +1,5 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <dimen name="button_padding">0dp</dimen>
+    <!-- You can adjust the value (e.g., 8dp) to your desired padding -->
+</resources>

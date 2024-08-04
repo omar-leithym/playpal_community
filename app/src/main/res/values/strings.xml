@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">OmarAssignment3</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_button_description">Back</string>
+    <string name="filter_button_description">Filter</string>
+    <string name="search">Search</string>
+    <string name="tos">
+        Terms of Service \n\n
+
+        Effective Date: 18/7/2024 \n\n
+
+        Welcome to PlayPal Community! Please read these Terms of Service carefully before using our application. By accessing or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App. \n\n
+
+        1. Acceptance of Terms \n
+        By downloading, accessing, or using the App, you agree to be bound by these Terms and all applicable laws and regulations. If you do not agree with any part of these Terms, you must not use the App. \n\n
+
+        2. Use of the App \n
+        You must be at least 16 years old to use the App. You agree to use the App only for lawful purposes and in accordance with these Terms. You are responsible for all activities that occur under your account. \n\n
+
+        3. Account Registration \n
+        To access certain features of the App, you may be required to register for an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete. You are responsible for safeguarding your account information and for any activities or actions under your account. \n\n
+
+        4. User Content \n
+        You may be able to submit, post, or upload content to the App. You retain ownership of any intellectual property rights that you hold in the User Content. By submitting User Content, you grant PlayPal Community a worldwide, non-exclusive, royalty-free, transferable license to use, reproduce, distribute, prepare derivative works of, display, and perform the User Content in connection with the App and PlayPal Community\'s business. \n\n
+
+        5. Prohibited Activities \n
+        You agree not to engage in any of the following prohibited activities:\n
+        - Violating any applicable law or regulation. \n
+        - Infringing or violating the rights of others. \n
+        - Distributing viruses or any other harmful computer code. \n
+        - Attempting to interfere with the security or functionality of the App. \n
+        - Engaging in any activity that could damage or harm PlayPal Community or its users. \n\n
+
+        6. Termination \n
+        We may terminate or suspend your account and access to the App at any time, without prior notice or liability, for any reason, including if you breach these Terms. Upon termination, your right to use the App will immediately cease.\n\n
+
+        7. Disclaimer of Warranties \n
+        The App is provided on an "AS IS" and "AS AVAILABLE" basis. PlayPal Community makes no representations or warranties of any kind, express or implied, regarding the App, including but not limited to the accuracy, reliability, or availability of the App. \n\n
+
+        8. Limitation of Liability \n
+        To the maximum extent permitted by law, PlayPal Community shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (a) your use or inability to use the App; (b) any unauthorized access to or use of our servers and/or any personal information stored therein; (c) any bugs, viruses, or the like that may be transmitted to or through the App by any third party; or (d) any errors or omissions in any content or for any loss or damage incurred as a result of the use of any content posted, emailed, transmitted, or otherwise made available through the App. \n\n
+
+        9. Governing Law \n
+        These Terms shall be governed by and construed in accordance with the laws of Egypt, without regard to its conflict of law principles. \n\n
+
+        10. Changes to Terms \n
+        We reserve the right to modify these Terms at any time. If we make changes to these Terms, we will provide notice through the App or by other means. Your continued use of the App after such notice constitutes your acceptance of the updated Terms. \n\n
+
+        11. Contact Us \n
+        If you have any questions about these Terms, please contact us.
+    </string>
+
+    <string name="rules">
+        "• All teams must be registered before the deadline.\n"
+        "• Each team must show up with the number of required players.\n"
+        "• All matches will be played according to the standard rules of the sport.\n"
+        "• Players must respect the referees' decisions. Any unsportsmanlike conduct will not be tolerated.\n"
+        "• Each team must report to the tournament coordinator at least 30 minutes before their scheduled match.\n"
+        "• In case of a tie, the game will be decided by a penalty shootout or another tie-breaker mechanism as outlined by the tournament rules.\n" +
+        "• All players must present valid identification before each match.\n"
+        "• The tournament organizers reserve the right to modify the rules or cancel the tournament if necessary.\n"
+        "• By participating, all players agree to these rules and any decisions made by the tournament officials.\n"
+        "• Good luck and have fun!"</string>
+    <string-array name="location_options">
+        <item></item>
+        <item>New Cairo</item>
+        <item>Sheikh Zayed City</item>
+        <item>Nasr City</item>
+        <item>Ain Shams</item>
+        <item>Heliopolis</item>
+        <item>Sheraton</item>
+        <item>6th October</item>
+        <item>Dokki</item>
+        <item>Zamalek</item>
+    </string-array>
+
+    <string-array name="gender_options">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="level_options">
+        <item></item>
+        <item>beginner</item>
+        <item>medium</item>
+        <item>pro</item>
+    </string-array>
+</resources>

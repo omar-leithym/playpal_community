@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape drawable with rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" /> <!-- Adjust the radius as per your preference -->
+            <solid android:color="@color/red" /> <!-- Default button color -->
+        </shape>
+    </item>
+    <!-- Solid color layer to be changed programmatically -->
+    <item android:id="@+id/colorLayer">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" /> <!-- Adjust the radius as per your preference -->
+            <solid android:color="@color/red" /> <!-- Default button color -->
+        </shape>
+    </item>
+</layer-list>

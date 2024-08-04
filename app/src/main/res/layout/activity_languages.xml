@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/android:windowBackground"
+    tools:context=".LanguagesFragment">
+
+    <TextView
+        android:id="@+id/englishText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="English"
+        android:textSize="18sp"
+        android:textColor="?attr/android:textColor" />
+
+    <TextView
+        android:id="@+id/frenchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="French"
+        android:textSize="18sp"
+        android:textColor="?attr/android:textColor" />
+
+    <TextView
+        android:id="@+id/arabicText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Arabic"
+        android:textSize="18sp"
+        android:textColor="?attr/android:textColor" />
+</LinearLayout>

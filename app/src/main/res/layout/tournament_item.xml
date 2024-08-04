@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_rounded"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp">
+
+    <TextView
+        android:id="@+id/tournament_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tournament Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tournament_details"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingBottom="8dp"
+        android:text="Details"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/tournament_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Left"
+        android:textColor="#3D619B"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:backgroundTint="#EF4B4C"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:minWidth="64dp" />
+</LinearLayout>
