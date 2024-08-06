@@ -129,7 +129,7 @@ public class SignupActivity extends AppCompatActivity {
                     String lastName = jsonResponse.getString("lastName");
                     String token = jsonResponse.getString("token");
 
-                    SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(SignupActivity.this);
+                    SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putInt("id", userId);
                     editor.putString("username", username);

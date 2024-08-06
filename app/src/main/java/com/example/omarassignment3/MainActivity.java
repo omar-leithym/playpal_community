@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import org.json.JSONException;
@@ -42,7 +43,15 @@ public class MainActivity extends AppCompatActivity {
         editTextUsername = findViewById(R.id.username);
         editTextPassword = findViewById(R.id.password);
         Button loginButton = findViewById(R.id.login_button);
-
+        TextView switchButton = findViewById(R.id.sign_up);
+        switchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
