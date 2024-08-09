@@ -1,5 +1,8 @@
 package com.example.omarassignment3;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -81,22 +84,28 @@ public class FriendListAdapter extends RecyclerView.Adapter<FriendListAdapter.Fr
             if (imageViewProfilePic != null) {
                 if (friend.getProfilePicUrl() != null && !friend.getProfilePicUrl().isEmpty()) {
                     Log.d("FriendListAdapter", "Loading image for " + friend.getName() + ": " + friend.getProfilePicUrl());
-                    Picasso.get()
-                            .load(friend.getProfilePicUrl())
-                            .placeholder(R.drawable.default_profile_pic) // Optionally add a placeholder
-                            .error(R.drawable.default_profile_pic) // Handle error
-                            .into(imageViewProfilePic, new Callback() {
-                                @Override
-                                public void onSuccess() {
-                                    Log.d("Picasso", "Image loaded successfully for " + friend.getName());
-                                }
+                    byte[] bytes= Base64.decode(friend.getProfilePicUrl(),Base64.DEFAULT);
+                    // Initialize bitmap
+                    Bitmap bitmap= BitmapFactory.decodeByteArray(bytes,0,bytes.length);
+                    // set bitmap on imageView
+                    imageViewProfilePic.setImageBitmap(bitmap);
 
-                                @Override
-                                public void onError(Exception e) {
-                                    Log.e("Picasso", "Failed to load image for " + friend.getName() + ": " + e.getMessage());
-                                    imageViewProfilePic.setImageResource(R.drawable.default_profile_pic);
-                                }
-                            });
+//                    Picasso.get()
+//                            .load(friend.getProfilePicUrl())
+//                            .placeholder(R.drawable.default_profile_pic) // Optionally add a placeholder
+//                            .error(R.drawable.default_profile_pic) // Handle error
+//                            .into(imageViewProfilePic, new Callback() {
+//                                @Override
+//                                public void onSuccess() {
+//                                    Log.d("Picasso", "Image loaded successfully for " + friend.getName());
+//                                }
+//
+//                                @Override
+//                                public void onError(Exception e) {
+//                                    Log.e("Picasso", "Failed to load image for " + friend.getName() + ": " + e.getMessage());
+//                                    imageViewProfilePic.setImageResource(R.drawable.default_profile_pic);
+//                                }
+//                            });
                 } else {
                     Log.d("FriendListAdapter", "No profile pic URL for " + friend.getName());
                     imageViewProfilePic.setImageResource(R.drawable.default_profile_pic);

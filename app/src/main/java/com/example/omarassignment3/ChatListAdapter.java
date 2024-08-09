@@ -1,6 +1,12 @@
 package com.example.omarassignment3;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,15 +51,23 @@ public class ChatListAdapter extends BaseAdapter {
         }
 
         Friend friend = getItem(position);
-
+        Log.e(TAG,"friend: "+friend.getName());
         TextView friendName = convertView.findViewById(R.id.textViewName);
         ImageView friendProfilePic = convertView.findViewById(R.id.imageViewProfilePicture);
 
         friendName.setText(friend.getName());
 
         String profilePicUrl = friend.getProfilePicUrl();
-        if (profilePicUrl != null && !profilePicUrl.isEmpty()) {
-            Picasso.get().load(profilePicUrl).placeholder(R.drawable.default_profile_pic).into(friendProfilePic);
+        Log.e(TAG,"profilepic: "+profilePicUrl);
+        if (profilePicUrl != null) { //&& !profilePicUrl.isEmpty()
+            //Picasso.get().load(profilePicUrl).placeholder(R.drawable.default_profile_pic).into(friendProfilePic);
+
+            byte[] bytes= Base64.decode(profilePicUrl,Base64.DEFAULT);
+            // Initialize bitmap
+            Bitmap bitmap= BitmapFactory.decodeByteArray(bytes,0,bytes.length);
+            // set bitmap on imageView
+            friendProfilePic.setImageBitmap(bitmap);
+
         } else {
             friendProfilePic.setImageResource(R.drawable.default_profile_pic);
         }
